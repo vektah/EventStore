@@ -5,7 +5,7 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<Platforms>x64</Platforms>
-		<RootNamespace>EventStore.Core.Services.Storage</RootNamespace>
+		<RootNamespace>EventStore.Storage</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
 	  <Compile Remove="Storage\ReaderIndex\**" />
@@ -19,11 +19,6 @@
 	  <Compile Remove="Storage\StorageScavenger.cs" />
 	  <Compile Remove="Storage\StorageWriterService.cs" />
 	</ItemGroup>
-	<ItemGroup>    
-		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-			<_Parameter1>EventStore.Core</_Parameter1>
-		</AssemblyAttribute>
-  </ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\EventStore.Common\EventStore.Common.csproj" />
 		<ProjectReference Include="..\EventStore.Rags\EventStore.Rags.csproj" />

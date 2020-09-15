@@ -1,6 +1,6 @@
 using System;
 
-namespace EventStore.Core {
+namespace EventStore.Storage.Epoch {
 	internal static class EpochExtensions {
 		public static DateTime FromTicksSinceEpoch(this long value) =>
 			new DateTime(DateTime.UnixEpoch.Ticks + value, DateTimeKind.Utc);

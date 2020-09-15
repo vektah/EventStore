@@ -7,7 +7,7 @@ using EventStore.Core.TransactionLogV2.DataStructures;
 using EventStore.Core.TransactionLogV2.LogRecords;
 using ILogger = Serilog.ILogger;
 
-namespace EventStore.Core.Services.Storage.EpochManager {
+namespace EventStore.Storage.Epoch {
 	public class EpochManager : IEpochManager {
 		private static readonly ILogger Log = Serilog.Log.ForContext<EpochManager>();
 

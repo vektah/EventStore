@@ -1,7 +1,7 @@
 ﻿using System;
 using EventStore.Core.TransactionLogV2.LogRecords;
 
-namespace EventStore.Core.Services.Storage.EpochManager {
+namespace EventStore.Storage.Epoch {
 	public interface IEpochManager {
 		int LastEpochNumber { get; }
 
