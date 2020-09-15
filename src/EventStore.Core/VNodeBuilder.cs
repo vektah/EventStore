@@ -15,11 +15,9 @@ using EventStore.Core.Services.Gossip;
 using EventStore.Core.Services.Monitoring;
 using EventStore.Core.Util;
 using EventStore.Core.Services.Transport.Http.Controllers;
-using EventStore.Core.Data;
 using EventStore.Core.Exceptions;
 using EventStore.Core.Services.PersistentSubscription.ConsumerStrategy;
 using EventStore.Core.Index;
-using EventStore.Core.Services.Storage.StorageChunk;
 using ILogger = Serilog.ILogger;
 
 namespace EventStore.Core {

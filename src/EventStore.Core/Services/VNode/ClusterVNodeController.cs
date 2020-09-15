@@ -10,7 +10,6 @@ using EventStore.Core.Cluster.Settings;
 using EventStore.Core.Data;
 using EventStore.Core.Messages;
 using EventStore.Core.Messaging;
-using EventStore.Core.Services.Storage.StorageChunk;
 using EventStore.Core.Services.TimerService;
 using EventStore.Core.Services.UserManagement;
 using ILogger = Serilog.ILogger;

@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
@@ -40,10 +39,6 @@ using EventStore.Common.Settings;
 using EventStore.Core.Authorization;
 using EventStore.Core.Cluster;
 using EventStore.Native.UnixSignalManager;
-using EventStore.Core.TransactionLogV2;
-using EventStore.Core.TransactionLogV2.Chunks;
-using EventStore.Core.TransactionLogV2.DataStructures;
-using EventStore.Core.TransactionLogV2.Hashes;
 using EventStore.Plugins.Authentication;
 using EventStore.Plugins.Authorization;
 using Microsoft.AspNetCore.Hosting;
@@ -54,7 +49,7 @@ using MidFunc = System.Func<
 	System.Func<System.Threading.Tasks.Task>,
 	System.Threading.Tasks.Task
 >;
-using TFChunkDb = EventStore.Core.Services.Storage.StorageChunk.TFChunkDb;
+
 
 namespace EventStore.Core {
 	public class ClusterVNode :

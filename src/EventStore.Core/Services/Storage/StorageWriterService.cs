@@ -14,14 +14,9 @@ using EventStore.Core.Services.Histograms;
 using EventStore.Core.Services.Monitoring.Stats;
 using EventStore.Core.Services.Storage.EpochManager;
 using EventStore.Core.Services.Storage.ReaderIndex;
-using EventStore.Core.TransactionLogV2.Chunks;
-using EventStore.Core.TransactionLogV2.Data;
-using EventStore.Core.TransactionLogV2.LogRecords;
-using EventStore.Core.TransactionLogV2.Services;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using ILogger = Serilog.ILogger;
-using TFChunkDb = EventStore.Core.Services.Storage.StorageChunk.TFChunkDb;
 
 namespace EventStore.Core.Services.Storage {
 	public class StorageWriterService : StorageWriter,
