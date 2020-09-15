@@ -1,4 +1,4 @@
-namespace EventStore.Core.Data {
+namespace EventStore.Storage.Data {
 	public enum ReadAllResult {
 		Success = 0,
 		NotModified = 1,

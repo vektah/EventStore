@@ -1,6 +1,6 @@
 using EventStore.Core.TransactionLogV2.Data;
 
-namespace EventStore.Core.Data {
+namespace EventStore.Storage.Data {
 	public struct ResolvedEvent {
 		public static readonly ResolvedEvent[] EmptyArray = new ResolvedEvent[0];
 		public static readonly ResolvedEvent EmptyEvent = new ResolvedEvent();
