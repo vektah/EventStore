@@ -1,4 +1,5 @@
 using System;
+using EventStore.Common.Hashes;
 using EventStore.Common.Utils;
 using EventStore.Core.TransactionLogV2.Hashes;
 

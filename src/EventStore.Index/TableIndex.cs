@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using EventStore.Common.Hashes;
 using EventStore.Common.Settings;
 using EventStore.Common.Utils;
 using EventStore.Core.Exceptions;

@@ -4,6 +4,7 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<Platforms>x64</Platforms>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="ConfigureAwaitChecker.Analyzer" Version="4.0.0">
