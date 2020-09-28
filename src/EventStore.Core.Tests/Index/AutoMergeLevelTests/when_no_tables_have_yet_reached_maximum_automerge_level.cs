@@ -8,9 +8,14 @@ namespace EventStore.Core.Tests.Index.AutoMergeLevelTests {
 		public void should_not_return_table_for_merge() {
 			AddTables(3);
 			Assert.AreEqual(2, _result.MergedMap.InOrder().Count());
-			var (level, table) = _result.MergedMap.GetTableForManualMerge();
-			Assert.AreEqual(1, level);
-			Assert.Null(table);
+			var result = _result.MergedMap.TryManualMerge(
+				UpgradeHash,
+				ExistsAt,
+				RecordExistsAt,
+				_fileNameProvider,
+				_ptableVersion,
+				skipIndexVerify: _skipIndexVerify);
+			Assert.False(result.HasMergedAny);
 		}
 	}
 }
